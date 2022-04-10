@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { localFavorites } from '../utils';
 import { FavoritePokemons } from '../../components/pokemon/FavoritePokemons';
 
-const index = () => {
+const FavoritesPage = () => {
 
     const [favorites, setFavorites] = useState<number[]>([])
 
@@ -28,4 +28,4 @@ const index = () => {
     )
 }
 
-export default index
+export default FavoritesPage
