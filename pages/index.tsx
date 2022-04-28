@@ -4,6 +4,7 @@ import { pokeApi } from '../api'
 import { PokemonListResponse, SmallPokemon } from '../interfaces'
 import { PokemonContainer } from '../components/pokemon/PokemonContainer'
 import { useState } from 'react'
+import { Image } from '@nextui-org/react'
 
 interface Props {
 	pokemons: SmallPokemon[];
@@ -14,6 +15,7 @@ const HomePage: NextPage<Props> = ({ pokemons}) => {
 	return (
 		<>
 			<Layout title="Listado de Pokémons" >
+				<Image src='/img/wpp.jpg' width={200} height={150}></Image>
 				<PokemonContainer pokemons={pokemons}/>
 			</Layout>
 		</>
