@@ -15,7 +15,6 @@ const HomePage: NextPage<Props> = ({ pokemons}) => {
 	return (
 		<>
 			<Layout title="Listado de Pokémons" >
-				<Image src='/img/wpp.jpg' width={200} height={150}></Image>
 				<PokemonContainer pokemons={pokemons}/>
 			</Layout>
 		</>
